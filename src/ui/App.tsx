@@ -1,19 +1,19 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Game from "./pages/game"
+import Landing from "./pages/landing"
+import Settings from "./pages/settings"
 import './App.css'
-import LandingPageImage from "./assets/landing/landingpage.png"
-import StartButton from "./assets/landing/start.png"
-import SettingsButton from "./assets/landing/settings.png"
 
-function App() {
-
+const App: React.FC = () => {
   return (
-    <div>
-      <div className='landing-container'>
-        <img src={LandingPageImage} alt="Landing Page" className='landing-image' />
-        <img src={StartButton} alt="Start Button" className='start-button' />
-        <img src={SettingsButton} alt="Settings Button" className='settings-button' />
-      </div>
-    </div>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/game" element={<Game />} />
+        <Route path="/settings" element={<Settings />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
