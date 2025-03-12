@@ -28,7 +28,7 @@
   position: absolute;
   top: 70%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%);
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -37,14 +37,14 @@
   position: absolute;
   top: 82%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%);
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 .start-button:hover,
 .settings-button:hover {
-  transform: translate(-50%, -50%) scale(0.6);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 /* GAME PAGE CSS */

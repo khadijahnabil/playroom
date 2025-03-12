@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import GameBg from "../assets/game/game-bg.png";
-import Character1 from "../assets/game/characters/CHARA1.png";
+import Character1 from "../assets/game/characters/chara1.png";
 import { setupCanvasWithImage } from "../../helpers/canvasHelper";
 
 export default function Game() {
