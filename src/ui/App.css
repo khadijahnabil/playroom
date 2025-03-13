@@ -1,19 +1,9 @@
-#root {
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-  /* padding: 0; */
-  overflow: hidden;
-  /* padding: 2rem; */
-  /* text-align: center; */
-  cursor: url("/src/ui/assets/cursor.png") 10 10, auto;
-}
-
 /* STANDARD STYLES */
 
 button,
 a,
 .hovered {
-  cursor: url("/src/ui/assets/cursor.png") 10 10, auto;
+  cursor: url("/src/ui/assets/cursor.png") 0 0, auto;
 }
 
 /* LANDING PAGE CSS */
