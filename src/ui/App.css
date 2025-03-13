@@ -5,6 +5,15 @@
   overflow: hidden;
   /* padding: 2rem; */
   /* text-align: center; */
+  cursor: url("/src/ui/assets/cursor.png") 10 10, auto;
+}
+
+/* STANDARD STYLES */
+
+button,
+a,
+.hovered {
+  cursor: url("/src/ui/assets/cursor.png") 10 10, auto;
 }
 
 /* LANDING PAGE CSS */
@@ -29,7 +38,6 @@
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
@@ -38,7 +46,6 @@
   top: 82%;
   left: 50%;
   transform: translate(-50%, -50%);
-  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
@@ -70,9 +77,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   pointer-events: auto;
-  transition: filter 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .character-canvas.hovered {
-  filter: brightness(1.3);
+  transform: translate(-50%, -50%) scale(1.1);
 }
