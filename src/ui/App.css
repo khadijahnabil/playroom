@@ -28,7 +28,7 @@ a,
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, width 0.3s ease;
 }
 
 .settings-button {
@@ -42,6 +42,16 @@ a,
 .start-button:hover,
 .settings-button:hover {
   transform: translate(-50%, -50%) scale(1.1);
+}
+
+.start-button.animate,
+.settings-button.animate {
+  transform: translate(-54%, -50%);
+}
+
+.start-button.animate:hover,
+.settings-button.animate:hover {
+  transform: translate(-54%, -50%) scale(1);
 }
 
 /* GAME PAGE CSS */
