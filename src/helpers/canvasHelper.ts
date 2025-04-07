@@ -1,7 +1,6 @@
 export const setupCanvasWithImage = (
   canvas: HTMLCanvasElement | null,
-  imgSrc: string,
-  setIsHovered: React.Dispatch<React.SetStateAction<boolean>>
+  imgSrc: string
 ) => {
   if (!canvas) return;
 
@@ -20,23 +19,5 @@ export const setupCanvasWithImage = (
 
   img.onerror = () => {
     console.error("Image failed to load:", imgSrc);
-  };
-
-  const checkPixel = (e: MouseEvent) => {
-    const rect = canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const pixel = ctx.getImageData(x, y, 1, 1).data;
-    setIsHovered(pixel[3] > 0);
-  };
-
-  const handleMouseLeave = () => setIsHovered(false);
-
-  canvas.addEventListener("mousemove", checkPixel);
-  canvas.addEventListener("mouseleave", handleMouseLeave);
-
-  return () => {
-    canvas.removeEventListener("mousemove", checkPixel);
-    canvas.removeEventListener("mouseleave", handleMouseLeave);
   };
 };
